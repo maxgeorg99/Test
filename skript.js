@@ -133,6 +133,7 @@
         d: "ESLint"
       },
       correctAnswer: "d"
+    }
   ];
 
   // Kick things off
