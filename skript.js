@@ -107,7 +107,7 @@
   const submitButton = document.getElementById('submit');
   const myQuestions = [
     {
-      question: "Who invented JavaScript?",
+      question: "Q1",
       answers: {
         a: "Ja",
         b: "Nein",
@@ -115,7 +115,7 @@
       correctAnswer: "a"
     },
     {
-      question: "Which one of these is a JavaScript package manager?",
+      question: "Q2",
       answers: {
         a: "Ja",
         b: "Nein",
@@ -123,7 +123,31 @@
       correctAnswer: "a"
     },
     {
-      question: "Which tool can you use to ensure code quality?",
+      question: "Q3",
+      answers: {
+        a: "Ja",
+        b: "Nein",
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "Q4",
+      answers: {
+        a: "Ja",
+        b: "Nein",
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "Q5",
+      answers: {
+        a: "Ja",
+        b: "Nein",
+      },
+      correctAnswer: "a"
+    },
+    {
+      question: "Q6",
       answers: {
         a: "Ja",
         b: "Nein",
