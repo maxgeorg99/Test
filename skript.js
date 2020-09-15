@@ -107,7 +107,7 @@
   const submitButton = document.getElementById('submit');
   const myQuestions = [
     {
-      question: "Q1",
+      question: "Haben sie neu aufgetretene Entfärbungen der Haut (zb. Fleckeförmig) bemerkt?",
       answers: {
         a: "Ja",
         b: "Nein",
@@ -115,7 +115,7 @@
       correctAnswer: "a"
     },
     {
-      question: "Q2",
+      question: "Haben sie neu aufgetretenen Ausschlag an sich bemerkt? Verspüren sie vermehrt (im Vergleich zu vor der Behandlung) neu aufgetretenen Juckreiz der Haut?",
       answers: {
         a: "Ja",
         b: "Nein",
@@ -123,7 +123,7 @@
       correctAnswer: "a"
     },
     {
-      question: "Q3",
+      question: "Haben sie aktuell Fieber >38.5° und/oder erhöhte Müdigkeit und Gliederschmerzen? Haben sie im Zusammenhang mit dem Beginn dieser Symptome neu aufgetretene schwärzliche Verfärbungen der Haut (incl. Finger und Zehen) bemerkt?",
       answers: {
         a: "Ja",
         b: "Nein",
@@ -131,7 +131,7 @@
       correctAnswer: "a"
     },
     {
-      question: "Q4",
+      question: "Haben sie eine neu aufgetretene Mundtrockenheit bemerkt?",
       answers: {
         a: "Ja",
         b: "Nein",
@@ -139,7 +139,7 @@
       correctAnswer: "a"
     },
     {
-      question: "Q5",
+      question: "Haben sie neu aufgetretenen Durchfall >3x/Tag (ohne Krankheitsgefühl bemerkt)?",
       answers: {
         a: "Ja",
         b: "Nein",
@@ -147,7 +147,23 @@
       correctAnswer: "a"
     },
     {
-      question: "Q6",
+      question: "Haben sie neu aufgetretene Durchfälle und Magen- Darmkrämpfe oder Blut im Stuhlgang bemerkt?",
+      answers: {
+        a: "Ja",
+        b: "Nein",
+      },
+      correctAnswer: "a"
+    },
+        {
+      question: "Haben sie in letzter Zeit vermehrt Müdigkeit, Abgeschlagenheit und erhöhtes Schlafbedürfnis bemerkt? Haben sie neu aufgetretene nicht  Ödeme (Dicke Beine) bemerkt?",
+      answers: {
+        a: "Ja",
+        b: "Nein",
+      },
+      correctAnswer: "a"
+    },
+        {
+      question: "Haben sie neu aufgetreten eine Kombination von Kopfschmerzen, Muskelschwäche, Verstopfung,Gewichtsverlust oder plötzliche Gewichtszunahme, Konzentrationsprobleme, erektile Dysfunktion und Milchproduktion der Brustdrüsen bemerkt?",
       answers: {
         a: "Ja",
         b: "Nein",
