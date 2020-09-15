@@ -18,7 +18,6 @@
           answers.push(
             `<label>
               <input type="radio" name="question${questionNumber}" value="${letter}">
-              ${letter} :
               ${currentQuestion.answers[letter]}
             </label>`
           );
@@ -65,7 +64,7 @@
       // if answer is wrong or blank
       else{
         // color the answers red
-        answerContainers[questionNumber].style.color = 'red';
+        answerContainers[questionNumber].style.color = 'orange';
       }
     });
 
