@@ -59,17 +59,17 @@
         numCorrect++;
 
         // color the answers green
-        answerContainers[questionNumber].style.color = 'lightgreen';
+        answerContainers[questionNumber].style.color = 'red';
       }
       // if answer is wrong or blank
       else{
         // color the answers red
-        answerContainers[questionNumber].style.color = 'orange';
+        answerContainers[questionNumber].style.color = 'lightgreen';
       }
     });
 
     // show number of correct answers out of total
-    resultsContainer.innerHTML = `${numCorrect} out of ${myQuestions.length}`;
+    resultsContainer.innerHTML = `Sie haben ${numCorrect} von ${myQuestions.length} Symptomen`;
   }
 
   function showSlide(n) {
