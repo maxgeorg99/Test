@@ -54,7 +54,7 @@ button:hover{
 }
 
 .lamp{
-    visibility: hidden:
+    visibility: hidden;
     border-radius: 100%;
     width: 80; 
     height: 80;
