@@ -5,7 +5,6 @@
     const output = [];
 
     // for each question...
-    trafficlight.style.visibility="hidden";
     myQuestions.forEach(
       (currentQuestion, questionNumber) => {
 
