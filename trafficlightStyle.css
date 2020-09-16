@@ -1,0 +1,32 @@
+body {
+    background-color: skyblue;
+}
+
+.trafficlight{
+    width: 100px;
+    height: 300px;
+    background-color: #434343;
+    margin: 10px auto 0px auto;
+    padding: 10px;
+    border-radius: 15px;
+}
+
+.lamp{
+    border-radius: 100%;
+    width: 80; 
+    height: 80;
+    padding: 45px;
+    margin: 5px;
+}
+
+.lamp.red{
+    background-color: #331111;
+}
+
+.lamp.yellow{
+    background-color: #222211;
+}
+
+.lamp.green{
+    background-color: #113311;
+}
