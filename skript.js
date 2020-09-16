@@ -5,6 +5,7 @@
     const output = [];
 
     // for each question...
+    trafficlight.style.visibility="hidden";
     myQuestions.forEach(
       (currentQuestion, questionNumber) => {
 
@@ -194,10 +195,6 @@
         return document.querySelector(e);
     }
     
-    var setColor = function(e, c){
-        e.style.backgroundColor = c;
-    }
-  
     var redLamp = $("#red");
     var yelLamp = $("#yellow");
     var greLamp = $("#green");
