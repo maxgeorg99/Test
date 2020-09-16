@@ -70,6 +70,7 @@
 
     // show number of correct answers out of total
     resultsContainer.innerHTML = `Sie haben ${numCorrect} von ${myQuestions.length} Symptomen`;
+    displayTrafficLight();
   }
 
   function showSlide(n) {
