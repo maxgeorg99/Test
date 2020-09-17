@@ -44,7 +44,8 @@
 
     // keep track of user's answers
     let numCorrect = 0;
-
+    let status = 1;
+    
     // for each question...
     myQuestions.forEach( (currentQuestion, questionNumber) => {
 
@@ -52,7 +53,8 @@
       const answerContainer = answerContainers[questionNumber];
       const selector = `input[name=question${questionNumber}]:checked`;
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-
+      status=Math.max(status,currentQuestion.indicatorNumber);
+      
       // if answer is correct
       if(userAnswer === currentQuestion.correctAnswer){
         // add to the number of correct answers
@@ -70,6 +72,8 @@
 
     // show number of correct answers out of total
     resultsContainer.innerHTML = `Sie haben ${numCorrect} von ${myQuestions.length} Symptomen`;
+    resultsContainer.innerHTML = `Status ${status}`;
+
   }
 
   function showSlide(n) {
@@ -111,7 +115,8 @@
         a: "Ja",
         b: "Nein",
       },
-      correctAnswer: "a"
+      correctAnswer: "a",
+      indicatorNumber: 1
     },
     {
       question: "Haben sie neu aufgetretenen Ausschlag an sich bemerkt? Verspüren sie vermehrt (im Vergleich zu vor der Behandlung) neu aufgetretenen Juckreiz der Haut?",
@@ -119,7 +124,8 @@
         a: "Ja",
         b: "Nein",
       },
-      correctAnswer: "a"
+      correctAnswer: "a",
+      indicatorNumber: 1
     },
     {
       question: "Haben sie aktuell Fieber >38.5° und/oder erhöhte Müdigkeit und Gliederschmerzen? Haben sie im Zusammenhang mit dem Beginn dieser Symptome neu aufgetretene schwärzliche Verfärbungen der Haut (incl. Finger und Zehen) bemerkt?",
@@ -127,7 +133,8 @@
         a: "Ja",
         b: "Nein",
       },
-      correctAnswer: "a"
+      correctAnswer: "a",
+      indicatorNumber: 4
     },
     {
       question: "Haben sie eine neu aufgetretene Mundtrockenheit bemerkt?",
@@ -135,7 +142,8 @@
         a: "Ja",
         b: "Nein",
       },
-      correctAnswer: "a"
+      correctAnswer: "a",
+      indicatorNumber: 2
     },
     {
       question: "Haben sie neu aufgetretenen Durchfall >3x/Tag (ohne Krankheitsgefühl bemerkt)?",
@@ -143,7 +151,8 @@
         a: "Ja",
         b: "Nein",
       },
-      correctAnswer: "a"
+      correctAnswer: "a",
+      indicatorNumber: 2
     },
     {
       question: "Haben sie neu aufgetretene Durchfälle und Magen- Darmkrämpfe oder Blut im Stuhlgang bemerkt?",
@@ -151,15 +160,17 @@
         a: "Ja",
         b: "Nein",
       },
-      correctAnswer: "a"
+      correctAnswer: "a",
+      indicatorNumber: 3
     },
         {
-      question: "Haben sie in letzter Zeit vermehrt Müdigkeit, Abgeschlagenheit und erhöhtes Schlafbedürfnis bemerkt? Haben sie neu aufgetretene nicht  Ödeme (Dicke Beine) bemerkt?",
+      question: "Haben sie in letzter Zeit vermehrt Müdigkeit, Abgeschlagenheit und erhöhtes Schlafbedürfnis bemerkt? Haben sie neu aufgetretene Ödeme (Dicke Beine) bemerkt?",
       answers: {
         a: "Ja",
         b: "Nein",
       },
-      correctAnswer: "a"
+      correctAnswer: "a",
+      indicatorNumber: 3
     },
         {
       question: "Haben sie neu aufgetreten eine Kombination von Kopfschmerzen, Muskelschwäche, Verstopfung,Gewichtsverlust oder plötzliche Gewichtszunahme, Konzentrationsprobleme, erektile Dysfunktion und Milchproduktion der Brustdrüsen bemerkt?",
@@ -167,9 +178,63 @@
         a: "Ja",
         b: "Nein",
       },
-      correctAnswer: "a"
-    }
-  ];
+      correctAnswer: "a",
+      indicatorNumber: 2
+    },
+        {
+      question: "Haben sie neu aufgetretenen trockenen Husten oder Kurzatmigkeit in Ruhe oder bei Belastung bemerkt?",
+      answers: {
+        a: "Ja",
+        b: "Nein",
+      },
+      correctAnswer: "a",
+      indicatorNumber: 3
+    },
+        {
+      question: "Haben sie eine Rötung der Augen und vermehrt juckende Augen bemerkt?",
+      answers: {
+        a: "Ja",
+        b: "Nein",
+      },
+      correctAnswer: "a",
+      indicatorNumber: 2
+    },
+        {
+      question: "Haben sie Gefühlsverluste oder Lähmungen in Armen oder Beinen bemerkt?",
+      answers: {
+        a: "Ja",
+        b: "Nein",
+      },
+      correctAnswer: "a",
+      indicatorNumber: 4
+    },
+        {
+      question: "Haben sie neu aufgetretene Gelenkbeschwerden bemerkt?",
+      answers: {
+        a: "Ja",
+        b: "Nein",
+      },
+      correctAnswer: "a",
+      indicatorNumber: 3
+    },
+        {
+      question: "Haben sie einen neu aufgetretenen Ausschlag im Gesicht ( Nase und Wangen) bemerkt?",
+      answers: {
+        a: "Ja",
+        b: "Nein",
+      },
+      correctAnswer: "a",
+      indicatorNumber: 3
+    },
+        {
+      question: "Haben sie Schmerzen im Oberbauch oder im Rücken bemerkt in Kombination mit vermehrter Übelkeit und/oder Erbrechen?",
+      answers: {
+        a: "Ja",
+        b: "Nein",
+      },
+      correctAnswer: "a",
+      indicatorNumber: 4
+    }];
 
   // Kick things off
   buildQuiz();
