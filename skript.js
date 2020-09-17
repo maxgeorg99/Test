@@ -84,6 +84,7 @@
        resultsContainer.innerHTML = `Suchen sie unverzüglich die Notaufnahme ihrer behandelnden Klinik auf. Sollten sie sich ausserhalb ihres Heimatortes aufhalten, wenden sie sich an die Notaufnahme eines überregionalen Klinikums. Nehmen sie alle ihnen vorliegenden ärztlichen Unterlagen mit.`;
       break;
       default:
+       resultContainer.innerHTML = `Fehler`;
     }
   }
 
