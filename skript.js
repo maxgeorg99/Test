@@ -53,7 +53,7 @@
       const answerContainer = answerContainers[questionNumber];
       const selector = `input[name=question${questionNumber}]:checked`;
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
-      status=Math.max(status,currentQuestion.indicatorNumber);
+      status = Math.max(status,currentQuestion.indicatorNumber);
       
       // if answer is correct
       if(userAnswer === currentQuestion.correctAnswer){
