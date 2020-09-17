@@ -116,7 +116,7 @@
         b: "Nein",
       },
       correctAnswer: "a",
-      indicatorNumber: 1
+      indicatorNumber: "1"
     },
     {
       question: "Haben sie neu aufgetretenen Ausschlag an sich bemerkt? Verspüren sie vermehrt (im Vergleich zu vor der Behandlung) neu aufgetretenen Juckreiz der Haut?",
@@ -125,7 +125,7 @@
         b: "Nein",
       },
       correctAnswer: "a",
-      indicatorNumber: 1
+      indicatorNumber: "1"
     },
     {
       question: "Haben sie aktuell Fieber >38.5° und/oder erhöhte Müdigkeit und Gliederschmerzen? Haben sie im Zusammenhang mit dem Beginn dieser Symptome neu aufgetretene schwärzliche Verfärbungen der Haut (incl. Finger und Zehen) bemerkt?",
@@ -134,7 +134,7 @@
         b: "Nein",
       },
       correctAnswer: "a",
-      indicatorNumber: 4
+      indicatorNumber: "4"
     },
     {
       question: "Haben sie eine neu aufgetretene Mundtrockenheit bemerkt?",
@@ -143,7 +143,7 @@
         b: "Nein",
       },
       correctAnswer: "a",
-      indicatorNumber: 2
+      indicatorNumber: "2"
     },
     {
       question: "Haben sie neu aufgetretenen Durchfall >3x/Tag (ohne Krankheitsgefühl bemerkt)?",
@@ -152,7 +152,7 @@
         b: "Nein",
       },
       correctAnswer: "a",
-      indicatorNumber: 2
+      indicatorNumber: "2"
     },
     {
       question: "Haben sie neu aufgetretene Durchfälle und Magen- Darmkrämpfe oder Blut im Stuhlgang bemerkt?",
@@ -161,7 +161,7 @@
         b: "Nein",
       },
       correctAnswer: "a",
-      indicatorNumber: 3
+      indicatorNumber: "3"
     },
         {
       question: "Haben sie in letzter Zeit vermehrt Müdigkeit, Abgeschlagenheit und erhöhtes Schlafbedürfnis bemerkt? Haben sie neu aufgetretene Ödeme (Dicke Beine) bemerkt?",
@@ -170,7 +170,7 @@
         b: "Nein",
       },
       correctAnswer: "a",
-      indicatorNumber: 3
+      indicatorNumber: "3"
     },
         {
       question: "Haben sie neu aufgetreten eine Kombination von Kopfschmerzen, Muskelschwäche, Verstopfung,Gewichtsverlust oder plötzliche Gewichtszunahme, Konzentrationsprobleme, erektile Dysfunktion und Milchproduktion der Brustdrüsen bemerkt?",
@@ -179,7 +179,7 @@
         b: "Nein",
       },
       correctAnswer: "a",
-      indicatorNumber: 2
+      indicatorNumber: "2"
     },
         {
       question: "Haben sie neu aufgetretenen trockenen Husten oder Kurzatmigkeit in Ruhe oder bei Belastung bemerkt?",
@@ -188,7 +188,7 @@
         b: "Nein",
       },
       correctAnswer: "a",
-      indicatorNumber: 3
+      indicatorNumber: "3"
     },
         {
       question: "Haben sie eine Rötung der Augen und vermehrt juckende Augen bemerkt?",
@@ -197,7 +197,7 @@
         b: "Nein",
       },
       correctAnswer: "a",
-      indicatorNumber: 2
+      indicatorNumber: "2"
     },
         {
       question: "Haben sie Gefühlsverluste oder Lähmungen in Armen oder Beinen bemerkt?",
@@ -206,7 +206,7 @@
         b: "Nein",
       },
       correctAnswer: "a",
-      indicatorNumber: 4
+      indicatorNumber: "4"
     },
         {
       question: "Haben sie neu aufgetretene Gelenkbeschwerden bemerkt?",
@@ -215,7 +215,7 @@
         b: "Nein",
       },
       correctAnswer: "a",
-      indicatorNumber: 3
+      indicatorNumber: "3"
     },
         {
       question: "Haben sie einen neu aufgetretenen Ausschlag im Gesicht ( Nase und Wangen) bemerkt?",
@@ -224,7 +224,7 @@
         b: "Nein",
       },
       correctAnswer: "a",
-      indicatorNumber: 3
+      indicatorNumber: "3"
     },
         {
       question: "Haben sie Schmerzen im Oberbauch oder im Rücken bemerkt in Kombination mit vermehrter Übelkeit und/oder Erbrechen?",
@@ -233,7 +233,7 @@
         b: "Nein",
       },
       correctAnswer: "a",
-      indicatorNumber: 4
+      indicatorNumber: "4"
     }];
 
   // Kick things off
