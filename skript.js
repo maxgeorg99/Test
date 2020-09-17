@@ -70,12 +70,6 @@
       }
     });
 
-    // show number of correct answers out of total
-    //resultsContainer.innerHTML = `Sie haben ${numCorrect} von ${myQuestions.length} Symptomen`;
-    Die Symptome lassen sich im Rahmen der von ihnen eingenommenen Immun-Chemotherapie erklären und sind nicht gefährlich. Berichten sich von den Syptomen bei ihrem nächsten Kontrolltermin.																				
-Die von ihnen beschriebenen Syptome sind nicht gefährlich. Sollten sich diese aber verschlimmern oder länger als 2-3 Tage anhalten, vereinbaren sie einen vorgezognen Kontrolltermin oder stellen sie sich bei ihrem Hausarzt vor.																				
-Bitte vereinbaren sie einen Kontrolltermin bei ihrem Hausarzt in den nächsten 24h und oder stellen sie sich notfallmässig bei ihrem Onkologen/Dermatologen vor.																				
-Suchen sie unverzüglich die Notaufnahme ihrer behandelnden Klinik auf. Sollten sie sich ausserhalb ihres Heimatortes aufhalten, wenden sie sich an die Notaufnahme eines überregionalen Klinikums. Nehmen sie alle ihnen vorliegenden ärztlichen Unterlagen mit.																				
     switch(status){
       case 1:    
        resultsContainer.innerHTML = `Die Symptome lassen sich im Rahmen der von ihnen eingenommenen Immun-Chemotherapie erklären und sind nicht gefährlich. Berichten sich von den Syptomen bei ihrem nächsten Kontrolltermin`;																				
