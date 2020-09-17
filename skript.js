@@ -44,7 +44,7 @@
 
     // keep track of user's answers
     let numCorrect = 0;
-    let status = 1;
+    var status = 1;
     
     // for each question...
     myQuestions.forEach( (currentQuestion, questionNumber) => {
