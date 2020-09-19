@@ -3,7 +3,7 @@
   function buildQuiz(){
     // variable to store the HTML output
     const output = [];
-    var lights = document.querySelectorAll('#isiqfor > div');
+    var lights = style.querySelectorAll('#isiqfor > div');
 	  for (i=0; i < lights.length; i++) {
 	  	lights[i].classList.remove('on');
 	  }
