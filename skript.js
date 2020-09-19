@@ -69,19 +69,26 @@
         answerContainers[questionNumber].style.color = 'lightgreen';
       }
     });
-
+    for (let i=0; i < lights.length; i++) {
+      lights[i].classList.remove('on');
+    }
+    document.getElementById("isiqfor").style.visibility = "visible";
     switch(status){
       case 1:
-       resultsContainer.innerHTML = `Die Symptome lassen sich im Rahmen der von ihnen eingenommenen Immun-Chemotherapie erklären und sind nicht gefährlich. Berichten sich von den Syptomen bei ihrem nächsten Kontrolltermin`;																				
-      break;
+       resultsContainer.innerHTML = `Die Symptome lassen sich im Rahmen der von ihnen eingenommenen Immun-Chemotherapie erklären und sind nicht gefährlich. Berichten sich von den Syptomen bei ihrem nächsten Kontrolltermin`;
+       lights[3].classList.add('on');
+       break;
       case 2:
-       resultsContainer.innerHTML = `Die von ihnen beschriebenen Syptome sind nicht gefährlich. Sollten sich diese aber verschlimmern oder länger als 2-3 Tage anhalten, vereinbaren sie einen vorgezognen Kontrolltermin oder stellen sie sich bei ihrem Hausarzt vor.`;																				  
-      break;
+        resultsContainer.innerHTML = `Die von ihnen beschriebenen Syptome sind nicht gefährlich. Sollten sich diese aber verschlimmern oder länger als 2-3 Tage anhalten, vereinbaren sie einen vorgezognen Kontrolltermin oder stellen sie sich bei ihrem Hausarzt vor.`;
+        lights[2].classList.add('on');
+        break;
       case 3:
        resultsContainer.innerHTML = `Bitte vereinbaren sie einen Kontrolltermin bei ihrem Hausarzt in den nächsten 24h und oder stellen sie sich notfallmässig bei ihrem Onkologen/Dermatologen vor.`;
+       lights[1].classList.add('on');
       break;
       case 4:
        resultsContainer.innerHTML = `Suchen sie unverzüglich die Notaufnahme ihrer behandelnden Klinik auf. Sollten sie sich ausserhalb ihres Heimatortes aufhalten, wenden sie sich an die Notaufnahme eines überregionalen Klinikums. Nehmen sie alle ihnen vorliegenden ärztlichen Unterlagen mit.`;
+       lights[0].classList.add('on');
       break;
       default:
        resultsContainer.innerHTML = `Fehler`;
@@ -116,6 +123,7 @@
   }
 
   // Variables
+  var lights = document.querySelectorAll('#isiqfor > div');
   const quizContainer = document.getElementById('quiz');
   const resultsContainer = document.getElementById('results');
   const submitButton = document.getElementById('submit');
