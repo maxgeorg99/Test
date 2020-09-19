@@ -12,7 +12,7 @@
         const answers = [];
 
         // and for each available answer...
-        for(letter in currentQuestion.answers){
+        for(let letter in currentQuestion.answers){
 
           // ...add an HTML radio button
           answers.push(
@@ -123,7 +123,7 @@
   }
 
   // Variables
-  var lights = document.querySelectorAll('#isiqfor > div');
+  let lights = document.querySelectorAll('#isiqfor > div');
   const quizContainer = document.getElementById('quiz');
   const resultsContainer = document.getElementById('results');
   const submitButton = document.getElementById('submit');
